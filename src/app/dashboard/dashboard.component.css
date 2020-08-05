@@ -1,0 +1,14 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.sidemenu {
+  background-color: #e6e6e6;
+  height: 655px;
+  width: 10%;
+}
+
+.content {
+  height: 655px;
+  width: 90%;
+}
