@@ -10,6 +10,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 2, name: 'Helium'},
   {position: 3, name: 'Lithium'},
   {position: 4, name: 'Beryllium'},
+  {position: 23, name: 'Beryllium'},
+  {position: 4, name: 'Beryllium'},
 ];
 
 @Component({
@@ -19,18 +21,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class TableDataComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name'];
-  dataSource = [];
+  ItemsArray = ["vaibhav","jayashreee","akshay","Pooja","Priyanka","Asha"];
   
   constructor() { }
 
   ngOnInit(): void {
-    this.dataSource = ELEMENT_DATA;
-  }
-
-  AddRow(){
-    ELEMENT_DATA.push({position: 11, name: 'Neon'});
-    this.dataSource = ELEMENT_DATA;
   }
 
 }

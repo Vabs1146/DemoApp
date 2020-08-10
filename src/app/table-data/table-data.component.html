@@ -1,16 +1,43 @@
 <div class="container">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <ng-container matColumnDef="position">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
-      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-    </ng-container>
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-  <button mat-flat-button color="primary" (click)="AddRow()">Add New Row</button>
-
+  <div class="row">
+    <div class="col-5">
+      <table class="table table-hover table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr scope="row" *ngFor="let item of ItemsArray ">
+            <td>{{ item }}</td>
+            <td>
+              <button type="button">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-6 offset-1">
+      <h2>HTML code</h2>
+      <pre> 
+        &lt;table class="table table-hover table-bordered"&gt; 
+            &lt;thead class="thead-dark"&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Actions&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr scope="row" *ngFor="let item of ItemsArray "&gt;
+                &lt;td&gt;item&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;button type="button"&gt;Delete&lt;/button&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt; 
+        </pre>
+    </div>
+  </div>
 </div>
