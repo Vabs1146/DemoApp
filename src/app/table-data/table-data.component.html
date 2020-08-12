@@ -1,6 +1,10 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-5">
+    <div class="col-4">
+      <div class="p-4">
+        <input matInput #box placeholder="Enter your name" #box (keyup)="onKey(box.value)">
+        <button type="button" (click)="addItem()">Add Row</button>
+      </div>
       <table class="table table-hover table-bordered">
         <thead class="thead-dark">
           <tr>
@@ -18,26 +22,34 @@
         </tbody>
       </table>
     </div>
-    <div class="col-6 offset-1">
+    <div class="col-4">
       <h2>HTML code</h2>
       <pre> 
-        &lt;table class="table table-hover table-bordered"&gt; 
-            &lt;thead class="thead-dark"&gt;
-            &lt;tr&gt;
-                &lt;th scope="col"&gt;Name&lt;/th&gt;
-                &lt;th scope="col"&gt;Actions&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;tr scope="row" *ngFor="let item of ItemsArray "&gt;
-                &lt;td&gt;item&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;button type="button"&gt;Delete&lt;/button&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-        &lt;/table&gt; 
+&lt;div class=" p-4 "&gt;
+  &lt;input matInput #box placeholder="Enter your name" (keyup)="onKey(box.value) "&gt; 
+  &lt;button type="button " (click)="addItem() "&gt;
+  Add Row&lt;/button&gt;
+&lt;/div&gt;
+&lt;table class="table table-hover table-bordered "&gt; 
+  &lt;thead class="thead-dark "&gt;
+    &lt;tr&gt;
+      &lt;th scope="col "&gt;Name&lt;/th&gt;
+      &lt;th scope="col "&gt;Actions&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr scope="row " *ngFor="let item of ItemsArray "&gt;
+      &lt;td&gt;item&lt;/td&gt;
+      &lt;td&gt;
+      &lt;button type="button "&gt;Delete&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt; 
         </pre>
+    </div>
+    <div class="col-4">
+      <h2>CSS code</h2>
     </div>
   </div>
 </div>
