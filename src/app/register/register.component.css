@@ -1,7 +1,7 @@
 	/* Coded with love by Mutiullah Samim */
 	
 	.user_card {
-	  height: 400px;
+	  height: 600px;
 	  width: 350px;
 	  margin-top: auto;
 	  margin-bottom: auto;
@@ -17,26 +17,8 @@
 	  border-radius: 5px;
 	}
 	
-	.brand_logo_container {
-	  position: absolute;
-	  height: 170px;
-	  width: 170px;
-	  top: -75px;
-	  border-radius: 50%;
-	  background: #ffffff;
-	  padding: 10px;
-	  text-align: center;
-	}
-	
-	.brand_logo {
-	  height: 140px;
-	  width: 140px;
-	  /* border-radius: 50%; */
-	  /* border: 2px solid white; */
-	}
-	
 	.form_container {
-	  margin-top: 100px;
+	  margin-top: 30px;
 	}
 	
 	.login_btn {
@@ -69,4 +51,12 @@
 	
 	.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
 	  background-color: #c0392b !important;
+	}
+	
+	.select_field {
+	  width: 100px;
+	}
+	
+	mat-form-field {
+	  font-size: small;
 	}

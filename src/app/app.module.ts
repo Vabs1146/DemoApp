@@ -9,13 +9,15 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TableDataComponent } from './table-data/table-data.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    TableDataComponent
+    TableDataComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
