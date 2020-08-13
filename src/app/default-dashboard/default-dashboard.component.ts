@@ -8,10 +8,16 @@ import { BrowserModule } from '@angular/platform-browser';
 })
 export class DefaultDashboardComponent implements OnInit {
 
-  ItemsArray = ["vaibhav","jayashreee","akshay","Pooja","Priyanka","Asha","sharmehs"];
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ItemsArray = [
+    {date:'25/05/2000',title:'vabs creativity',status:'submitted'},
+    {date:'25/05/2000',title:'vabs creativity',status:'submitted'},
+    {date:'25/05/2000',title:'vabs creativity',status:'submitted'},
+    {date:'25/05/2000',title:'vabs creativity',status:'submitted'},
+    {date:'25/05/2000',title:'vabs creativity',status:'submitted'}
+  ];
 }
