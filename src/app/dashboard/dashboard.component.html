@@ -1,9 +1,7 @@
 <mat-toolbar color="primary">
   <img src="../../assets/images/dash_logo.png" width="100px" alt="Logo">
   <span class="spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
+  <p>{{email}}</p>
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon [routerLink]="'/login'">logout</mat-icon>
       </button>
@@ -12,7 +10,7 @@
 <div class="d-flex">
   <div class="sidemenu">
     <mat-nav-list>
-      <a mat-list-item [routerLink]="'/dashboard/table'"> Requirements </a>
+      <a mat-list-item [routerLink]="'/dashboard/table'">New Requirements </a>
       <a mat-list-item [routerLink]="''"> Pre Inspection </a>
       <a mat-list-item [routerLink]="''"> Post Inspection </a>
     </mat-nav-list>
